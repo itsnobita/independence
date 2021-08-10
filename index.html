@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Happy Independence Day in Advance</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <link rel="icon" href="india-flag-152-221176.png" >
+    </head>
+    <body>
+        <audio autoplay>
+            <source src="jana.mp3">
+        </audio>
+            <div class="heading-f">
+                <h1 style="color:#ff9328 ; " >Happy </h1><h1 style="color:#ffffff ; ">Independence</h1><h1 style="color:#138808 ; "> Day</h1> <h1 style="color: #138808;">From</h1> <h1  class="out" id="output" >'Enter Name'</h1>
+            </div>
+        <h2 class="h2">Let's salute the nation!</h2>
+
+            <div class="countdown-container">
+                <div class="countdown-el days-c">
+                    <p class="big-text" id="days">0</p>
+                    <span class="span">days</span>
+                </div>
+                <div class="countdown-el hours-c">
+                    <p class="big-text" id="hours">0</p>
+                    <span class="span">hours</span>
+                </div>
+                <div class="countdown-el mins-c">
+                    <p class="big-text" id="mins">0</p>
+                    <span class="span">mins</span>
+                </div>
+                <div class="countdown-el seconds-c">
+                    <p class="big-text" id="seconds">0</p>
+                    <span class="span">seconds</span>
+                </div>
+            </div>
+
+            <div class="enter-name">
+                <input type="text" id="name" placeholder="Your Name" class="name" value="">
+                <button type="submit" id="submit" class="submit" value="Submit" onclick="getInputValue();">Enter</button>
+            </div>
+            
+            <button type="submit"  id="share" class="share" value="Share" ><a href="whatsapp://send?text=Happy Independence Day 2021 in Advance. 
+                My love for my country is boundless. All I desire for my nation is happiness. Let me be the first one to wish you a very Happy Independence Day! To our brave soldiers and freedom fighters who are the heroes of the nation – they are the reason we are free today, and we will never forget their sacrifice.
+                 Share it with your Loving Ones. Click Here
+                 http://bit.ly/independence-day-2021-greetings" 		data-action="share/whatsapp/share"
+            target="_blank">Share on WhatsApp</button>
+
+            
+       
+    </body>
+    <script>
+        function getInputValue(){
+
+            var output=document.getElementById('output');
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("name").value;
+            
+            // Displaying the value
+            output.innerHTML = inputVal;
+        }
+    </script>
+    
+</html>
